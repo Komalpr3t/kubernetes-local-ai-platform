@@ -14,7 +14,9 @@ spec:
     spec:
       containers:
       - name: ollama
-        image: ollama/ollama:latest
+        image: ollama/ollama:0.1.48
+        imagePullPolicy: IfNotPresent
+
         ports:
         - containerPort: 11434
         volumeMounts:
